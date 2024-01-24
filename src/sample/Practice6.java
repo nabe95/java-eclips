@@ -2,7 +2,9 @@ package sample;
 
 public class Practice6 {
 	public static void main(String[] args) {
-		String msg = "私の年齢は" + 23;
-		System.out.print(msg);
+		String[] names = { "渡邉", "わたなべ", "ワタナベ" };
+		for (int x = 0; x < 3; x++) {
+			System.out.println("名前は" + names[x] + "です");
+		}
 	}
 }
