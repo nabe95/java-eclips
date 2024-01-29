@@ -1,18 +1,14 @@
 package sample;
 
-//1〜10までに奇数が何個あるか、また奇数の合計は幾つになるか表示させる
 public class Practice8 {
 	public static void main(String[] args) {
-		int count = 0;
-		int sum = 0;
-
-		for (int i = 1; i <= 10; i++) {
-			if (i % 2 != 0) {
-				count++;
-				sum += i;
-			}
+		String[] array = new String[3];
+		array[0] = "{1,2,3}";
+		array[1] = "{2,4,6}";
+		array[2] = "{3,6,9}";
+		
+		for (int i = 0; i < 3; i++) {
+			System.out.println("要素[" + i + "] = " + array[i]);
 		}
-		System.out.println(count);
-		System.out.println(sum);
 	}
 }
