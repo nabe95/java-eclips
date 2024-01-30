@@ -2,12 +2,27 @@ package sample;
 
 public class Practice10 {
 	public static void main(String[] args) {
-		for (int i = 1; i < 10; i++) {
-			for (int j = 1; j < 10; j++) {
-				System.out.print(i * j);
-				System.out.print(" ");
+		int[] num = new int[20];
+		for (int i = 0; i < num.length; i++) {
+			num[i] = i * 5;
+		}
+		System.out.print("奇数:");
+		for (int i = 0; i < 10; i++) {
+			if (i % 2 != 0) {
+				System.out.print(num[i]);
+				if (i < 10 - 1) {
+					System.out.print(", ");
+				}
 			}
-			System.out.println("");
+		}
+		System.out.print("\n偶数:");
+		for (int i = 11; i < num.length; i++) {
+			if (i % 2 == 0) {
+				System.out.print(num[i]);
+				if (i < 19 - 1) {
+					System.out.print(", ");
+				}
+			}
 		}
 	}
 }
